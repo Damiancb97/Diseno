@@ -1,0 +1,167 @@
+.cabecera{
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: violet; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid black;
+}
+body{
+    /* background-color: aqua; */
+}
+/*----------------------------LOGOTIPO----------------------*/
+.imagen-esquina-izquierda{
+    width: 100px;
+    height: 100px;
+}
+/*----------------------------BARRA DE BUSQUEDA-------------------*/
+.menuprincipal{
+    /* background-color:coral; */
+    margin-right: 80px;
+}
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 20px;
+    background-color: white;
+    color: black;
+}
+
+.menu li a:hover:not(.activo){
+    background-color: grey;
+    font-weight: 900;
+    border-bottom: 1px solid black;
+}
+/*-----------------------SUBMENU----------------------------*/
+
+
+
+/*-----------------------------BUSCAR + ICONOS-----------------*/
+.barra-iconos{
+    /* background-color: darkkhaki; */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#Buscar{
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+.fa-solid.fa-heart{
+    font-size: 20px;
+    color: black;
+}
+.fa-solid.fa-bag-shopping{
+    font-size: 20px;
+    color: black;
+}
+.fa-solid.fa-user{
+    font-size: 20px;
+    color: black;
+}
+
+.barra-iconos a:hover:not(.activo){
+    background-color: grey;
+    font-weight: 900;
+    border-bottom: 1px solid black;
+}
+
+#Buscar{
+margin-right: 10px;
+}
+.barra-iconos a{
+    margin-left: 5px;
+}
+
+/*-----------------------------FOOTER------------------------*/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: violet;  */
+    text-align: center;
+    justify-content: center;
+    gap: 150px;
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+/*-----------------------------ASISTENCIA--------------------*/
+.asistencia{
+    border: 1px solid black;
+    /* background-color: aqua; */
+    display: flex;
+}
+.asistencia ul .header{
+    background-color: grey;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+.asistencia ul {
+    margin: 0px;
+    padding: 5px;
+}
+.asistencia li{
+    list-style-type: none;
+    display: flex;
+}
+.asistencia a{
+    text-decoration: none;
+    color: black;
+}
+
+/*---------------------------INFORMATION-------------------------*/
+.information{
+    border: 1px solid black;
+    /* background-color: aqua; */
+}
+.information ul .header{
+    background-color: grey;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+.information ul {
+    margin: 0px;
+    padding: 5px;
+}
+.information li{
+    list-style-type: none;
+    display: flex;
+}
+.information a{
+    text-decoration: none;
+    color: black;
+}
+/*--------------------------------REDES------------------------*/
+.redes li{
+    display: inline-flex;
+}
+.redes li{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.fa-brands.fa-square-instagram{
+    font-size: 30px;
+    color: black;
+}
+.fa-brands.fa-facebook{
+    font-size: 30px;
+    color: black;
+}
+.fa-brands.fa-square-x-twitter{
+    font-size: 30px;
+    color: black;
+}
+.fa-brands.fa-tiktok{
+    font-size: 25px;
+    color: black;
+}

@@ -1,0 +1,7 @@
+overflow para la cabecera
+.seve:hover + .noseve{
+    /*Pero antes ocultar a la clase .noseve con display:none*/
+display: block //Para añadir la barra de busqueda con todo el contenido que ofrece la pagina
+}
+display: inline-block;
+para añadir todo en linea
