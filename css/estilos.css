@@ -3,9 +3,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/*--HEADER--*/
+/*-------------------------------------HEADER-----------------------------*/
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +14,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border-bottom: 1px solid black;
 }
 
 /*--logotipo--*/
@@ -37,12 +37,12 @@
 
 .menuprincipal a.activo {
     text-decoration: underline;
-    background-color: lightslategray;
+    background-color: rgb(122, 27, 27);
+    color: white;
 }
 
 .menuprincipal a:hover:not(.activo) {
     background-color: grey;
-    font-weight: 900;
 }
 
 /*--buscar + iconos--*/
@@ -63,147 +63,118 @@
 }
 
 /*--imagen header--*/
-.cabecera {
-    background-color: aqua;
+
+.imagen_cabecera_con_texto {
+    position: relative;
+    width: 100%;
     height: 400px;
 }
 
-/*--BODY CONTAINER--*/
-.bodycontainer {
-    height: 50vh;
-    padding-left: 20px;
+.imagen_cabecera {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*--texto en imagen--*/
+.imagen_cabecera_con_texto .textImagen {
+    /* background-color: aqua; */
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.imagen_cabecera_con_texto p {
+    font-size: 20px;
+}
+
+.imagen_cabecera_con_texto .modelo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+
+.imagen_cabecera_con_texto .boton_comprar {
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(122, 27, 27);
 }
 
 
-/*-----------------------------FOOTER------------------------*/
+/*-------------------------------------------BODY CONTAINER----------------------------*/
+.bodycontainer {
+    /* height: 50vh; */
+    /* padding-left: 20px; */
+}
+
+
+/*----------------------------------------------FOOTER-----------------------------*/
 .footer {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
     justify-content: space-evenly;
-    /*este queda como quieres sin incluir el gap*/
-    /*justify-content: center;*/
-    /*si quieres espacio no los centres usa otra de las propiedades
-    para no tener que darle un gap de 150px*/
-    /*gap: 150px;ojo con los espacios entre elementos, ojo con las medidas fijas dentro de 
-    poco vamos con el diseño responsive*/
     border-top: 1px solid black;
     padding-top: 20px;
-    /*align-self: flex-end; esta propiedad es para los hijos de footer no para footer 
-    no hace nada*/
-    align-items: center;
+    padding-bottom: 20px;
 }
 
-/*-----------------------------asistencia--------------------*/
+/*-----------------------------asistencia e information--------------------*/
 
-/*en esto ya no entro porque es que el html no está correcto,
-saca la ul y li y los header y organiza de nuevo div y dentro p y enlace*/
-.asistencia {
-    /* border: 1px solid black; */
-    /* background-color: aqua; */
-    /* display: flex; */
-}
-
-.asistencia ul .header {
-    background-color: grey;
-    display: flex;
-    border-bottom: 1px solid black;
-}
-
-.asistencia ul {
-    margin: 0px;
-    padding: 5px;
-}
-
-.asistencia li {
-    list-style-type: none;
-    display: flex;
-}
-
-.asistencia a {
-    text-decoration: none;
-    color: black;
-}
-
-/*---------------------------information-------------------------*/
+.asistencia,
 .information {
-    border: 1px solid black;
-    /* background-color: aqua; */
-}
-
-.information ul .header {
-    background-color: grey;
     display: flex;
-    border-bottom: 1px solid black;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.information ul {
-    margin: 0px;
-    padding: 5px;
+/*aplicar bold al primer hijo de div*/
+.footer div p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.information li {
-    list-style-type: none;
-    display: flex;
-}
-
+.asistencia a,
 .information a {
     text-decoration: none;
     color: black;
 }
 
+.asistencia a:hover:not(.activo),
+.information a:hover:not(.activo) {
+    text-decoration: underline;
+}
+
 /*--------------------------------redes------------------------*/
-.redes li {
-    display: inline-flex;
-    /*quiero flex no cosas inventadas que no he dado*/
-}
-
-.redes li {
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
-
-/*lo mismo que arriba de los iconos de fontawesome crea tu clase y da estilos y si se
-repiten la reutilizas*/
-.fa-brands.fa-square-instagram {
-    font-size: 30px;
-    color: black;
-}
-
-.fa-brands.fa-facebook {
-    font-size: 30px;
-    color: black;
-}
-
-.fa-brands.fa-square-x-twitter {
-    font-size: 30px;
-    color: black;
-}
-
-.fa-brands.fa-tiktok {
-    font-size: 25px;
+.facebook,
+.instagram,
+.twitter,
+.tiktok {
+    font-size: 35px;
     color: black;
 }
 
 /*--------------------------------idioma------------------------*/
-
 .language {
-    /* background-color: aqua; */
     position: relative;
-    display: inline-block;
-    text-align: center;
-    border-radius: 30px;
-    border: 1px solid #000000;
-    align-items: center;
+    display: block;
 }
 
 .language-selector {
     text-decoration: none;
     color: #333;
     padding: 10px;
-    display: block;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 30px;
 }
 
 .language-dropdown {

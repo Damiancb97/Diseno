@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://kit.fontawesome.com/3f957754fb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <!--HEADER-->
@@ -42,9 +43,14 @@
         <!--Imagen cabecera-->
     </nav>
     <header class="cabecera">
-        <div class="imagen_cabecera">
+        <div class="imagen_cabecera_con_texto">
             <a href="#">
-                <img src="img/cabecera.png" alt="imagen_cabecera" width="100%" height="auto">
+                <img src="img/cabecera.png" alt="imagen_cabecera" class="imagen_cabecera" width="100%" height="100%">
+                <div class="textImagen">
+                    <p class="modelo">La 9060</p>
+                    <p>Expresionismo moderno</p>
+                    <p class="boton_comprar">Comprar ahora</p>
+                </div>
             </a>
         </div>
     </header>
@@ -60,64 +66,30 @@
     y la etiqueta header no es para un título de un pie de página-->
     <div class="footer">
         <div class="asistencia">
-            <ul>
-                <li class="header">
-                    <header>Asistencia:</header>
-                </li>
-                <a href="#">
-                    <li>Ayuda</li>
-                </a>
-                <a href="#">
-                    <li>Entregas</li>
-                </a>
-                <a href="#">
-                    <li>Devoluciones y reembolsos</li>
-                </a>
-                <a href="#">
-                    <li>Seguimiento de pedidos</li>
-                </a>
-            </ul>
+            <p>Asistencia</p>
+            <p><a href="#">Ayuda</a></p>
+            <p><a href="#">Entregas</a></p>
+            <p><a href="#">Devoluciones y reembolsos</a></p>
+            <p><a href="#">Seguimiento de pedidos</a></p>
         </div>
         <div class="information">
-            <ul>
-                <li class="header">
-                    <header>Información legal:</header>
-                </li>
-                <a href="#">
-                    <li>Términos y Condiciones</li>
-                </a>
-                <a href="#">
-                    <li>Política de privacidad</li>
-                </a>
-                <a href="#">
-                    <li>Política de cookies</li>
-                </a>
-                <a href="#">
-                    <li>Preferencia de cookies</li>
-                </a>
-            </ul>
+            <p>Informacion legal</p>
+            <p><a href="#">Términos y Condiciones</a></p>
+            <p><a href="#">Política de privacidad</a></p>
+            <p><a href="#">Política de cookies</a></p>
+            <p><a href="#">Preferencia de cookies</a></p>
         </div>
-        <!--Lo mismo en redes saca la ul y la li, y el header
-        Así
-            <div class="redes">
-                <p>Siguenos:</p>
-               <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        -->
+
         <div class="redes">
-            <ul>
-                <header>Siguenos:</header>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-            </ul>
+            <p>Siguenos:</p>
+            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#" class="twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
         </div>
+
         <div class="language">
-            <a href="#" class="language-selector"><i class="fa-solid fa-globe"></i> Idioma</a>
+            <a href="#" class="language-selector"><i class="fa-solid fa-globe"></i>Idioma</a>
             <ul class="language-dropdown">
                 <li><a href="#">Español</a></li>
                 <li><a href="#">Inglés</a></li>
