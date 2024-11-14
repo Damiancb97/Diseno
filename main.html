@@ -8,37 +8,56 @@
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://kit.fontawesome.com/3f957754fb.js" crossorigin="anonymous"></script>
 </head>
-<!------------------------------------------HEADER------------------------------------>
+
+<!--HEADER-->
+
 <body>
-    <div class="cabecera">
+    <nav class="nav">
+        <!--logotipo-->
         <div class="logo">
             <a href="#"><img src="img/logopagina.png" alt="Logotipo" class="imagen-esquina-izquierda"></a>
         </div>
-
+        <!--Barra de navegación-->
         <div class="menuprincipal">
-            <ul class="menu">
-                <li><a href="#">Novedades</a></li>
-                <li><a href="#">Ropa</a></li>
-                <li><a href="#">Tenis</a></li>
-                <li><a href="#">Electrónica</a></li>
-                <li><a href="#">Ofertas</a></li>
-            </ul>
+            <a href="#" class="activo">Novedades</a>
+            <a href="#">Ropa</a>
+            <a href="#">Tenis</a>
+            <a href="#">Electrónica</a>
+            <a href="#">Relojes</a>
+            <a href="#">Accesorios</a>
         </div>
-
+        <!--Buscador + iconos-->
         <div class="barra-iconos">
-            <input type="text" placeholder="Buscar" id="Buscar">
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
-            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            <a href="#"><i class="fa-solid fa-user"></i> </a>
+            <input type="text" placeholder="Buscar" id="buscar">
+            <a href="#" class="favorito">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+            <a href="#" class="cesta">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <a href="#" class="user">
+                <i class="fa-solid fa-user"></i>
+            </a>
         </div>
+        <!--Imagen cabecera-->
+    </nav>
+    <header class="cabecera">
+        <div class="imagen_cabecera">
+            <a href="#">
+                <img src="img/cabecera.png" alt="imagen_cabecera" width="100%" height="auto">
+            </a>
+        </div>
+    </header>
 
-    </div>
-<!----------------------------------------BODY------------------------------------------->
+    <!--BODY-->
+
     <div class="bodycontainer">
 
 
     </div>
-<!--------------------------------------FOOTER---------------------------------------->
+
+    <!--Esto así puesto es una locura, saca la lista ul y los li
+    y la etiqueta header no es para un título de un pie de página-->
     <div class="footer">
         <div class="asistencia">
             <ul>
@@ -78,6 +97,16 @@
                 </a>
             </ul>
         </div>
+        <!--Lo mismo en redes saca la ul y la li, y el header
+        Así
+            <div class="redes">
+                <p>Siguenos:</p>
+               <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        -->
         <div class="redes">
             <ul>
                 <header>Siguenos:</header>
