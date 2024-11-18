@@ -5,10 +5,18 @@
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "nav"
+                        "bodycontainer"
+                        "footer";
+}
 
 /*-------------------------------------HEADER-----------------------------*/
 .nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -61,6 +69,7 @@
     font-size: 20px;
     color: black;
     margin-left: 5px;
+    text-decoration: none;
 }
 
 
@@ -91,7 +100,7 @@
     padding: 10px;
     /* border: 1px solid black; */
     /* background-color: orange; */
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     margin-bottom: 10px;
     border-radius: 5px;
 }
@@ -146,8 +155,8 @@ button {
 
 /*----------------------------------------------FOOTER-----------------------------*/
 .footer {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     justify-content: space-evenly;
     border-top: 1px solid black;
     padding-top: 20px;
