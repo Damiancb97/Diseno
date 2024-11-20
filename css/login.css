@@ -9,11 +9,11 @@
 /*-------------------------------------HEADER-----------------------------*/
 .nav {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border-bottom: 1px solid black;
 }
 
 /*--logotipo--*/
@@ -46,7 +46,6 @@
 }
 
 /*--buscar + iconos--*/
-
 #buscar {
     text-align: center;
     border-radius: 50px;
@@ -61,7 +60,9 @@
     font-size: 20px;
     color: black;
     margin-left: 5px;
+    text-decoration: none;
 }
+
 
 
 /*-------------------------------------------BODY CONTAINER----------------------------*/
