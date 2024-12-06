@@ -44,13 +44,12 @@ body {
 }
 
 .menuprincipal a.activo {
-    text-decoration: underline;
     background-color: rgb(122, 27, 27);
     color: white;
 }
 
 .menuprincipal a:hover:not(.activo) {
-    background-color: grey;
+    background-color: rgb(122, 27, 27);
 }
 
 /*--buscar + iconos--*/

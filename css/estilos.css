@@ -36,13 +36,13 @@
 }
 
 .menuprincipal a.activo {
-    text-decoration: underline;
     background-color: rgb(122, 27, 27);
     color: white;
 }
 
 .menuprincipal a:hover:not(.activo) {
-    background-color: grey;
+    background-color: rgb(122, 27, 27);
+    color: white;
 }
 
 /*--buscar + iconos--*/
@@ -111,10 +111,68 @@
 
 
 /*-------------------------------------------BODY CONTAINER----------------------------*/
+
+
+
 .bodycontainer {
-    /* height: 50vh; */
-    /* padding-left: 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
+
+.openbody {
+    text-align: center;
+}
+
+.openbody h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.section {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.section h3 {
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.images-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(25% - 10px);
+    /* Mantiene las dimensiones originales */
+}
+
+.image-item img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    /* Espaciado entre imagen y texto */
+}
+
+.image-item p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
 
 
 /*----------------------------------------------FOOTER-----------------------------*/
