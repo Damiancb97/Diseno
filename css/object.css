@@ -151,7 +151,6 @@
 }
 
 /*Manejo de filters*/
-
 #filters.hidden {
     display: none;
     /* Aplica el desplazamiento */
@@ -161,62 +160,118 @@
     display: flex;
 }
 
-/*barra lateral izq*/
-.aside {
+/*imagenes de objecto*/
+.object-img {
     display: flex;
-    flex: 20%;
+    flex-direction: column;
+    width: 75%;
     border-right: 1px solid #ccc;
-}
-
-.aside ul {
-    margin: 20px;
-}
-
-.aside ul li {
-    list-style: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.section {
-    background-color: #ffffff;
-    padding-top: 70px;
-    padding-left: 35px;
-    padding-right: 20px;
-    padding-bottom: 35px;
-    border-radius: 8px;
+    padding-left: 70px;
 }
 
 .images-row {
     display: flex;
-    justify-content: space-around;
 }
 
 .image-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* text-align: center; */
-    width: calc(25% - 10px);
-    /* Mantiene las dimensiones originales */
 }
 
 .image-item img {
-    width: 100%;
+    width: 70%;
     border-radius: 5px;
     object-fit: cover;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
-    /* Espaciado entre imagen y texto */
 }
 
-.image-item p {
-    font-size: 14px;
-    color: #333;
+/*valoracion*/
+.details-object {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding-left: 115px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border-right: none;
+}
+
+.right-details-object {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#details-valoracion {
+    border-radius: 5px;
+}
+
+/*info object*/
+.object-info {
+    background-color: #ffffff;
+    padding-top: 70px;
+    padding-left: 35px;
+    padding-right: 100px;
+    padding-bottom: 35px;
+    border-radius: 8px;
+}
+
+.colors ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.colors ul li {
+    list-style: none;
+}
+
+/*area para los colores*/
+.colors button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sizes ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 0;
     margin: 0;
+    list-style: none;
 }
 
-/*----------------------------------------------FOOTER-----------------------------*/
+.sizes ul li {
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#add-cart {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#add-favorite {
+    font-size: 20px;
+    width: 50px;
+    /* Ajusta el tamaño deseado del botón */
+    height: 50px;
+    /* Debe ser igual al ancho para un círculo perfecto */
+    border-radius: 50%;
+    /* Hace que el botón sea un círculo */
+}
+
+/*----------------------------FOOTER-----------------------------*/
 
 .footer {
     display: flex;
@@ -227,7 +282,7 @@
     padding-bottom: 20px;
 }
 
-/*-----------------------------asistencia e information--------------------*/
+/*asistencia e information*/
 
 .asistencia,
 .information {
@@ -253,8 +308,7 @@
     text-decoration: underline;
 }
 
-/*--------------------------------redes------------------------*/
-
+/*--redes--*/
 .facebook,
 .instagram,
 .twitter,
@@ -263,7 +317,7 @@
     color: black;
 }
 
-/*--------------------------------idioma------------------------*/
+/*--idioma--*/
 .language {
     position: relative;
     display: block;
@@ -294,12 +348,12 @@
     list-style: none;
 }
 
-/* Estilos para cada elemento del menú */
+/*--Estilos para cada elemento del menú--*/
 .language-dropdown li {
     display: block;
 }
 
-/* Estilos para los enlaces en cada opción */
+/*--Estilos para los enlaces en cada opción--*/
 .language-dropdown li a {
     display: block;
     color: #333;
@@ -311,7 +365,7 @@
     background-color: #ddd;
 }
 
-/*Muestra idiomas al pasar el mouse*/
+/*--Muestra idiomas al pasar el mouse--*/
 .language:hover .language-dropdown {
     display: block;
 }

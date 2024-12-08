@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+    <link rel="stylesheet" href="css/object.css">
+    <script src="https://kit.fontawesome.com/3f957754fb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--HEADER-->
+
+    <nav class="nav">
+        <!--logotipo-->
+        <div class="logo">
+            <a href="main.html"><img src="img/logopagina.png" alt="Logotipo" class="imagen-esquina-izquierda"></a>
+        </div>
+        <!--Barra de navegación-->
+        <div class="menuprincipal">
+            <a href="main.html">Inicio</a>
+            <a href="clothes.html" class="activo">Ropa</a>
+            <a href="tenis.html">Tenis</a>
+            <a href="electronic.html">Electrónica</a>
+            <a href="watches.html">Relojes</a>
+            <a href="#">Accesorios</a>
+        </div>
+        <!--Buscador + iconos-->
+        <div class="barra-iconos">
+            <input type="text" placeholder="Buscar" id="buscar">
+            <a href="#" class="favorito">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+            <a href="#" class="cesta">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <a href="login.html" class="user">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!--BODY-->
+
+    <div class="bodycontainer">
+        <div class="openbody">
+            <!--filtros-->
+            <div class="filter">
+                <h3>ROPA > Object</h3>
+                <div class="filter-options">
+                    <span id="show_filter" style="display: none;">Mostrar filtros <i
+                            class="fa-solid fa-filter"></i></span>
+                    <span id="hidden_filter">Ocultar filtros <i class="fa-solid fa-filter"></i></span>
+                    <span id="order_by">Ordenar por <i class="fa-solid fa-chevron-down" id="chevrondown"></i><i
+                            class="fa-solid fa-chevron-up" id="chevronup" style="display: none;"></i></span>
+                    <ul id="upform" style="display: none;">
+                        <li>Más recientes</li>
+                        <li>Precio: alto-bajo</li>
+                        <li>Precio: bajo-alto</li>
+                    </ul>
+                </div>
+            </div>
+            <!--contenedor con 2 divs, aside y section-->
+            <div class="container-global">
+                <!--left-->
+                <div class="object-img">
+                    <div class="images-row">
+                        <div class="image-item">
+                            <img src="img/AF1black.png" alt="object 1">
+                        </div>
+                        <div class="image-item">
+                            <img src="img/AF1black.png" alt="object 2">
+                        </div>
+                    </div>
+                    <div class="images-row">
+                        <div class="image-item">
+                            <img src="img/AF1black.png" alt="object 4">
+                        </div>
+                        <div class="image-item">
+                            <img src="img/AF1black.png" alt="object 5">
+                        </div>
+                    </div>
+                    <div class="details-object">
+                        <div class="text-valoracion">
+                            <p>Valoracion("X")</p>
+                        </div>
+                        <div class="right-details-object">
+                            <div class="number">
+                                <p>4.8</p>
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="markdown" id="details-valoracion">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-object">
+                        <div class="text-valoracion">
+                            <p>Descripción</p>
+                        </div>
+                        <div class="right-valoracion">
+                            <div class="markdown" id="details-valoracion">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-object">
+                        <div class="text-valoracion">
+                            <p>Detalles</p>
+                        </div>
+                        <div class="right-valoracion">
+                            <div class="markdown" id="details-valoracion">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--right-->
+                <div class="object-info">
+                    <div>
+                        <h2>NAME OBJECT</h2>
+                        <p>PRECIO</p>
+                    </div>
+                    <div class="colors">
+                        <h3>Colors</h3>
+                        <ul>
+                            <li><button type="button" aria-label="Color Red" style="background-color: red;"></button>
+                            </li>
+                            <li><button type="button" aria-label="Color Azul" style="background-color: blue;"></button>
+                            </li>
+                            <li><button type="button" aria-label="Color Azul" style="background-color: green;"></button>
+                            </li>
+                            <li><button type="button" aria-label="Color Azul" style="background-color: black;"></button>
+                            </li>
+                            <li><button type="button" aria-label="Color Azul" style="background-color: grey;"></button>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="sizes">
+                        <h3>Sizes</h3>
+                        <ul>
+                            <li>38</li>
+                            <li>39</li>
+                            <li>40</li>
+                            <li>41</li>
+                            <li>42</li>
+                            <li>43</li>
+                            <li>44</li>
+                            <li>45</li>
+                        </ul>
+                        <a href="#">Guía de tallas</a>
+                    </div>
+                    <div class="accion">
+                        <button type="button" id="add-cart">Añadir al carrito</button>
+                        <button type="button" id="add-favorite"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="asistencia">
+            <p>Asistencia</p>
+            <p><a href="#">Ayuda</a></p>
+            <p><a href="#">Entregas</a></p>
+            <p><a href="#">Devoluciones y reembolsos</a></p>
+            <p><a href="#">Seguimiento de pedidos</a></p>
+        </div>
+        <div class="information">
+            <p>Informacion legal</p>
+            <p><a href="#">Términos y Condiciones</a></p>
+            <p><a href="#">Política de privacidad</a></p>
+            <p><a href="#">Política de cookies</a></p>
+            <p><a href="#">Preferencia de cookies</a></p>
+        </div>
+
+        <div class="redes">
+            <p>Siguenos:</p>
+            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#" class="twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+
+        <div class="language">
+            <a href="#" class="language-selector"><i class="fa-solid fa-globe"></i>Idioma</a>
+            <ul class="language-dropdown">
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Inglés</a></li>
+                <li><a href="#">Francés</a></li>
+                <li><a href="#">Chino</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/Filters.js"></script>
+    <script src="/js/OrderBy.js"></script>
+</body>
+
+</html>
