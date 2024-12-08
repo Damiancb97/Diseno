@@ -209,13 +209,21 @@
 }
 
 /*info object*/
-.object-info {
+.object-select {
     background-color: #ffffff;
-    padding-top: 70px;
-    padding-left: 35px;
-    padding-right: 100px;
+    padding-top: 50px;
+    padding-left: 40px;
     padding-bottom: 35px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 30px;
+    color: #333;
+}
+
+div>h3 {
+    padding-bottom: 5px;
 }
 
 .colors ul {
@@ -230,10 +238,10 @@
 
 /*area para los colores*/
 .colors button {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     border: none;
-    border-radius: 50%;
+    border-radius: 20%;
     cursor: pointer;
 }
 
@@ -246,29 +254,50 @@
     list-style: none;
 }
 
+/*botton tallas*/
 .sizes ul li {
     text-align: center;
     background-color: #f7f7f7;
-    border-radius: 4px;
-    padding: 5px;
+    border-radius: 7px;
+    padding: 10px;
     border: 1px solid #ccc;
     font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+/*guia tallas*/
+.guiatallas {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/*acciones comprar/favoritos*/
+.accion {
+    display: flex;
+    text-align: center;
+    gap: 10px;
 }
 
 #add-cart {
-    font-size: 20px;
+    font-size: 30px;
     padding: 10px;
     border-radius: 10px;
+    color: white;
+    background-color: #007BFF;
+    border-color: inherit;
 }
 
 #add-favorite {
-    font-size: 20px;
-    width: 50px;
+    background-color: rgb(129, 27, 27);
+    color: red;
+    font-size: 35px;
+    width: 70px;
     /* Ajusta el tamaño deseado del botón */
-    height: 50px;
+    height: 70px;
     /* Debe ser igual al ancho para un círculo perfecto */
-    border-radius: 50%;
+    border-radius: 70%;
     /* Hace que el botón sea un círculo */
 }
 
