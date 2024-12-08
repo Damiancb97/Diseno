@@ -144,6 +144,11 @@
     cursor: pointer;
 }
 
+#upform li {
+    list-style: none;
+
+}
+
 /*Manejo de filters*/
 
 #filters.hidden {
