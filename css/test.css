@@ -1,121 +1,373 @@
-/* General Reset */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  /* Navbar */
-  #navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #282c34;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    z-index: 1000;
-  }
-  
-  #navbar a {
-    color: #61dafb;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  #navbar a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Welcome Section */
-  #welcome-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    background: #61dafb;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  #welcome-section h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Projects Section */
-  #projects {
-    padding: 20px;
-    text-align: center;
-    background: #f4f4f4;
-  }
-  
-  #projects h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .project-tile {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 10px auto;
-    max-width: 300px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .project-tile a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-  }
-  
-  .project-tile a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Contact Section */
-  #contact {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  #contact h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  #contact a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 1rem;
-  }
-  
-  #contact a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Media Query for Smaller Screens */
-  @media (max-width: 768px) {
-    #navbar {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    #welcome-section h1 {
-      font-size: 2.5rem;
-    }
-  
-    .project-tile {
-      max-width: 90%;
-    }
-  }
-  
+/*Incluye siempre la propiedad box-sizing*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/*-------------------------------------HEADER-----------------------------*/
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/*--logotipo--*/
+.imagen-esquina-izquierda {
+  width: 120px;
+  height: auto;
+  margin-right: 150px;
+}
+
+/*--barra de busqueda--*/
+.menuprincipal {
+  margin-right: 80px;
+}
+
+.menuprincipal a {
+  text-decoration: none;
+  padding: 16px 20px;
+  background-color: white;
+  color: black;
+}
+
+.menuprincipal a.activo {
+  background-color: rgb(122, 27, 27);
+  color: white;
+}
+
+.menuprincipal a:hover:not(.activo) {
+  background-color: rgb(122, 27, 27);
+  color: white;
+}
+
+/*--buscar + iconos--*/
+#buscar {
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.favorito,
+.cesta,
+.user {
+  font-size: 20px;
+  color: black;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+/*--imagen header--*/
+
+.imagen_cabecera_con_texto {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.imagen_cabecera {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*--texto en imagen--*/
+.imagen_cabecera_con_texto .textImagen {
+  /* background-color: aqua; */
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-15%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.imagen_cabecera_con_texto p {
+  font-size: 20px;
+}
+
+.imagen_cabecera_con_texto .modelo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+}
+
+.imagen_cabecera_con_texto .boton_comprar {
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(122, 27, 27);
+}
+
+/*-------------------------------------------BODY CONTAINER----------------------------*/
+
+.bodycontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+}
+
+.filter h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.filter-options {
+  display: flex;
+  gap: 15px;
+}
+
+.filter-options span {
+  font-size: 16px;
+  color: #007bff;
+  /* Color de los enlaces */
+  cursor: pointer;
+  text-decoration: underline;
+  /* Subrayado para simular un enlace */
+}
+
+.filter-options span:hover {
+  text-decoration: none;
+  /* Quita el subrayado al pasar el mouse */
+}
+
+.container-asides {
+  display: flex;
+}
+
+.aside {
+  display: flex;
+  flex: 25%
+}
+
+.aside ul li {
+  list-style: none;
+}
+
+.section {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.images-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(25% - 10px);
+  /* Mantiene las dimensiones originales */
+}
+
+.image-item img {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+  /* Espaciado entre imagen y texto */
+}
+
+.image-item p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+/*formulario*/
+/*Formulario*/
+.formulario-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  /* background-color: antiquewhite; */
+}
+
+/*Logeo y register (pestañas)*/
+.logReg {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  /* border: 1px solid black; */
+  /* background-color: orange; */
+  /* justify-content: space-evenly; */
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.logReg div {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*Estado activo en las pestaña*/
+.logReg div.active {
+  background-color: rgb(122, 27, 27);
+  color: #fff;
+}
+
+form {
+  display: none;
+}
+
+form.active {
+  display: block;
+  /* background-color: grey; */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.create-account {
+  background-color: red;
+  height: 95%
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*----------------------------------------------FOOTER-----------------------------*/
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*-----------------------------asistencia e information--------------------*/
+
+.asistencia,
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/*aplicar bold al primer hijo de div*/
+.footer div p:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.asistencia a,
+.information a {
+  text-decoration: none;
+  color: black;
+}
+
+.asistencia a:hover:not(.activo),
+.information a:hover:not(.activo) {
+  text-decoration: underline;
+}
+
+/*--------------------------------redes------------------------*/
+.facebook,
+.instagram,
+.twitter,
+.tiktok {
+  font-size: 35px;
+  color: black;
+}
+
+/*--------------------------------idioma------------------------*/
+.language {
+  position: relative;
+  display: block;
+}
+
+.language-selector {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #000000;
+  border-radius: 30px;
+}
+
+.language-dropdown {
+  display: none;
+  /* Oculto inicialmente */
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  background-color: #f2f2f2;
+  min-width: 120px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Estilos para cada elemento del menú */
+.language-dropdown li {
+  display: block;
+}
+
+/* Estilos para los enlaces en cada opción */
+.language-dropdown li a {
+  display: block;
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.language-dropdown li a:hover {
+  background-color: #ddd;
+}
+
+/*Muestra idiomas al pasar el mouse*/
+.language:hover .language-dropdown {
+  display: block;
+}

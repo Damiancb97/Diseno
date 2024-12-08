@@ -1,44 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="css/test.css">
+  <title>Index</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/3f957754fb.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
+<!--HEADER-->
+
 <body>
-  <!-- Navbar -->
-  <nav id="navbar">
-    <a href="#welcome-section">Welcome</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+  <nav class="nav">
+    <!--logotipo-->
+    <div class="logo">
+      <a href="main.html"><img src="img/logopagina.png" alt="Logotipo" class="imagen-esquina-izquierda"></a>
+    </div>
+    <!--Barra de navegación-->
+    <div class="menuprincipal">
+      <a href="main.html" class="activo">Inicio</a>
+      <a href="clothes.html">Ropa</a>
+      <a href="#">Tenis</a>
+      <a href="#">Electrónica</a>
+      <a href="#">Relojes</a>
+      <a href="#">Accesorios</a>
+    </div>
+    <!--Buscador + iconos-->
+    <div class="barra-iconos">
+      <input type="text" placeholder="Buscar" id="buscar">
+      <a href="#" class="favorito">
+        <i class="fa-solid fa-heart"></i>
+      </a>
+      <a href="#" class="cesta">
+        <i class="fa-solid fa-bag-shopping"></i>
+      </a>
+      <a href="login.html" class="user">
+        <i class="fa-solid fa-user"></i>
+      </a>
+    </div>
+    <!--Imagen cabecera-->
   </nav>
-
-  <!-- Welcome Section -->
-  <section id="welcome-section">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm a web developer passionate about creating amazing projects.</p>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-tile">
-      <a href="https://example.com/project1" target="_blank">Project 1</a>
+  <header class="cabecera">
+    <div class="imagen_cabecera_con_texto">
+      <a href="#">
+        <img src="img/cabecera.png" alt="imagen_cabecera" class="imagen_cabecera" width="100%" height="100%">
+        <div class="textImagen">
+          <p class="modelo">La 9060</p>
+          <p>Expresionismo moderno</p>
+          <p class="boton_comprar">Comprar ahora</p>
+        </div>
+      </a>
     </div>
-    <div class="project-tile">
-      <a href="https://example.com/project2" target="_blank">Project 2</a>
-    </div>
-    <div class="project-tile">
-      <a href="https://example.com/project3" target="_blank">Project 3</a>
-    </div>
-  </section>
+  </header>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out or connect with me online!</p>
-    <a id="profile-link" href="https://github.com/your-profile" target="_blank">Visit My GitHub</a>
-  </section>
+  <!--BODY-->
+
+  <div class="bodycontainer">
+    <div class="openbody">
+      <h2>APROVECHA LA OCASIÓN</h2>
+      <p>Aquí encontrarás todo lo que necesitas</p>
+      <div class="section">
+        <h3>Ofertas</h3>
+        <div class="images-row">
+          <div class="image-item">
+            <img src="img/AF1black.png" alt="Oferta 1">
+            <p>Modelo AF1 Black</p>
+          </div>
+          <div class="image-item">
+            <img src="img/AF1black.png" alt="Oferta 2">
+            <p>Modelo AF1 White</p>
+          </div>
+          <div class="image-item">
+            <img src="img/AF1black.png" alt="Oferta 3">
+            <p>Modelo AF1 Red</p>
+          </div>
+          <div class="image-item">
+            <img src="img/AF1black.png" alt="Oferta 4">
+            <p>Modelo AF1 Blue</p>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Lo Más Vendido</h3>
+        <div class="images-row">
+          <div class="image-item">
+            <img src="img/AF1black.png" alt="Lo Más Vendido 1">
+            <p>Modelo AF1 Black Edition</p>
+          </div>
+          <div class="image-item">
+            <img src="img/AF1black.png" alt="Lo Más Vendido 2">
+            <p>Modelo AF1 Classic</p>
+          </div>
+          <div class="image-item">
+            <img src="img/AF1black.png" alt="Lo Más Vendido 3">
+            <p>Modelo AF1 Premium</p>
+          </div>
+          <div class="image-item">
+            <img src="img/AF1black.png" alt="Lo Más Vendido 4">
+            <p>Modelo AF1 Limited</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <div class="footer">
+    <div class="asistencia">
+      <p>Asistencia</p>
+      <p><a href="#">Ayuda</a></p>
+      <p><a href="#">Entregas</a></p>
+      <p><a href="#">Devoluciones y reembolsos</a></p>
+      <p><a href="#">Seguimiento de pedidos</a></p>
+    </div>
+    <div class="information">
+      <p>Informacion legal</p>
+      <p><a href="#">Términos y Condiciones</a></p>
+      <p><a href="#">Política de privacidad</a></p>
+      <p><a href="#">Política de cookies</a></p>
+      <p><a href="#">Preferencia de cookies</a></p>
+    </div>
+
+    <div class="redes">
+      <p>Siguenos:</p>
+      <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" class="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#" class="twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
+      <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+
+    <div class="language">
+      <a href="#" class="language-selector"><i class="fa-solid fa-globe"></i>Idioma</a>
+      <ul class="language-dropdown">
+        <li><a href="#">Español</a></li>
+        <li><a href="#">Inglés</a></li>
+        <li><a href="#">Francés</a></li>
+        <li><a href="#">Chino</a></li>
+      </ul>
+    </div>
+  </div>
 </body>
+
 </html>
