@@ -147,9 +147,16 @@
 
 #upform li {
     list-style: none;
-
 }
-
+#upform{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    left: 0%;
+    top: 100%;
+}
 /*Manejo de filters*/
 
 #filters.hidden {
