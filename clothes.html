@@ -50,12 +50,13 @@
             <div class="filter">
                 <h3>ROPA</h3>
                 <div class="filter-options">
-                    <span id="show_filter" style="display: none;">Mostrar filtros <i
+                    <span id="show_filter">Mostrar filtros <i class="fa-solid fa-filter"></i></span>
+                    <span id="hidden_filter" style="display: none;">Ocultar filtros <i
                             class="fa-solid fa-filter"></i></span>
-                    <span id="hidden_filter">Ocultar filtros <i class="fa-solid fa-filter"></i></span>
                     <span id="order_by">Ordenar por <i class="fa-solid fa-chevron-down" id="chevrondown"></i><i
                             class="fa-solid fa-chevron-up" id="chevronup" style="display: none;"></i></span>
-                    <ul id="upform" class="hidden">
+                    <!--lista desplegable filtros-->
+                    <ul id="upform">
                         <li>Más recientes</li>
                         <li>Precio: alto-bajo</li>
                         <li>Precio: bajo-alto</li>
@@ -65,7 +66,7 @@
             <!--contenedor con 2 divs, aside y section-->
             <div class="container-global">
                 <!--left-->
-                <div class="aside" id="filters">
+                <div class="aside" id="filters" style="display: none;">
                     <div class="categories">
                         <ul class="aside-nav">
                             <li>Jerseys</li>
@@ -77,12 +78,6 @@
                         </ul>
                     </div>
                 </div>
-                <!--lista desplegable filtros-->
-                <!-- <ul id="upform" style="display: none;">
-                    <li>Más recientes</li>
-                    <li>Precio: alto-bajo</li>
-                    <li>Precio: bajo-alto</li>
-                </ul> -->
                 <!--right-->
                 <div class="section">
                     <div class="images-row">

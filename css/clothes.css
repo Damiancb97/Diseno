@@ -146,25 +146,8 @@
 }
 
 /* Ordenar por */
-/* #upform {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    left: 0%;
-    top: 100%;
-}
-*/
-#upform li {
-    list-style: none;
-}
-
-#upform.hidden {
-    display: none;
-}
-
 #upform {
+    display: none;
     position: absolute;
     /* Permite controlar la posición relativa al contenedor */
     top: 15%;
@@ -176,6 +159,10 @@
     padding: 10px;
     border-radius: 5px;
     z-index: 1000;
+}
+
+#upform li {
+    list-style: none;
 }
 
 /*Manejo de filters*/
