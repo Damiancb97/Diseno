@@ -145,10 +145,8 @@
     cursor: pointer;
 }
 
-#upform li {
-    list-style: none;
-}
-#upform{
+/* Ordenar por */
+/* #upform {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -157,8 +155,30 @@
     left: 0%;
     top: 100%;
 }
-/*Manejo de filters*/
+*/
+#upform li {
+    list-style: none;
+}
 
+#upform.hidden {
+    display: none;
+}
+
+#upform {
+    position: absolute;
+    /* Permite controlar la posición relativa al contenedor */
+    top: 15%;
+    /* Ajusta según lo necesites */
+    right: 5.3%;
+    /* Ajusta según la alineación */
+    background-color: rgb(129, 27, 27);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/*Manejo de filters*/
 #filters.hidden {
     display: none;
     /* Aplica el desplazamiento */

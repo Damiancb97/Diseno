@@ -290,8 +290,8 @@ div>h3 {
 }
 
 #add-favorite {
-    background-color: rgb(129, 27, 27);
-    color: red;
+    background-color: white;
+    color: rgb(129, 27, 27);
     font-size: 35px;
     width: 70px;
     /* Ajusta el tamaño deseado del botón */
@@ -299,6 +299,7 @@ div>h3 {
     /* Debe ser igual al ancho para un círculo perfecto */
     border-radius: 70%;
     /* Hace que el botón sea un círculo */
+    border-color: grey;
 }
 
 /*----------------------------FOOTER-----------------------------*/
