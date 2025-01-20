@@ -5,7 +5,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/*-------------------------------------HEADER-----------------------------*/
+/*---------------------------------HEADER-----------------------------*/
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -109,7 +109,7 @@
     background-color: rgb(122, 27, 27);
 }
 
-/*-------------------------------------------BODY CONTAINER----------------------------*/
+/*--------------------------------BODY CONTAINER----------------------------*/
 
 .bodycontainer {
     display: flex;
@@ -257,23 +257,22 @@
     padding-top: 3rem;
     padding-bottom: 1.6rem;
     padding-right: 5rem;
+    padding-left: 5rem;
 }
 
-.selectPage {
-    flex: 1;
-    text-align: center;
-}
-
-.nextPage {
-    text-align: right;
+.prevPage p {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .nextPage p {
     text-decoration: underline;
     cursor: pointer;
+    font-weight: bold;
 }
 
-/*----------------------------------------------FOOTER-----------------------------*/
+/*----------------------------------FOOTER-----------------------------*/
 
 .footer {
     display: flex;
@@ -284,7 +283,11 @@
     padding-bottom: 5rem;
 }
 
-/*-----------------------------asistencia e information--------------------*/
+.footer p a {
+    color: grey;
+}
+
+/*asistencia e information*/
 
 .asistencia,
 .information {
@@ -310,7 +313,7 @@
     text-decoration: underline;
 }
 
-/*--------------------------------redes------------------------*/
+/*redes*/
 
 .facebook,
 .instagram,
@@ -320,7 +323,7 @@
     color: black;
 }
 
-/*--------------------------------idioma------------------------*/
+/*idioma*/
 .language {
     position: relative;
     display: block;
