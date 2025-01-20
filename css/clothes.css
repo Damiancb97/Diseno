@@ -192,6 +192,7 @@
     padding-bottom: 20px;
 }
 
+/*contenido derecho*/
 .section {
     background-color: #ffffff;
     padding-top: 70px;
@@ -222,12 +223,54 @@
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
     /* Espaciado entre imagen y texto */
+    cursor: pointer;
 }
 
 .image-item p {
     font-size: 14px;
     color: #333;
     margin: 0;
+}
+
+/*contenido debajo de la imagen*/
+.datosObject {
+    padding-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.datosObject p {
+    font-size: 1.2rem;
+}
+
+/*aplicar al segundo hijo de*/
+.datosObject>p:nth-of-type(2) {
+    font-weight: bold;
+}
+
+/*paginacion*/
+.inferiorSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 1.6rem;
+    padding-right: 5rem;
+}
+
+.selectPage {
+    flex: 1;
+    text-align: center;
+}
+
+.nextPage {
+    text-align: right;
+}
+
+.nextPage p {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /*----------------------------------------------FOOTER-----------------------------*/
@@ -237,8 +280,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     border-top: 1px solid #ccc;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
 }
 
 /*-----------------------------asistencia e information--------------------*/
