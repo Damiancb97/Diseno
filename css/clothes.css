@@ -192,6 +192,16 @@
     padding-bottom: 20px;
 }
 
+.aside-nav {
+    text-align: center;
+    cursor: pointer;
+}
+
+.aside-nav li:hover:not(.activo) {
+    background-color: rgb(122, 27, 27);
+    color: white;
+}
+
 /*contenido derecho*/
 .section {
     background-color: #ffffff;
@@ -274,7 +284,7 @@
 
 /*----------------------------------FOOTER-----------------------------*/
 
-.footer {
+.infofooter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -283,7 +293,7 @@
     padding-bottom: 5rem;
 }
 
-.footer p a {
+.infofooter p a {
     color: grey;
 }
 
@@ -297,7 +307,7 @@
 }
 
 /*aplicar bold al primer hijo de div*/
-.footer div p:first-child {
+.infofooter div p:first-child {
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -374,4 +384,9 @@
 /*Muestra idiomas al pasar el mouse*/
 .language:hover .language-dropdown {
     display: block;
+}
+
+.footercopy {
+    display: flex;
+    justify-content: space-between;
 }
