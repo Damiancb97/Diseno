@@ -390,3 +390,14 @@
     display: flex;
     justify-content: space-between;
 }
+
+/*--Copyright--*/
+.copyright {
+    font-size: 15px;
+}
+
+.copyright img {
+    height: 22px;
+    vertical-align: middle;
+    margin-left: 0.1rem;
+}
