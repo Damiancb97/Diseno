@@ -212,8 +212,9 @@
 .object-select {
     background-color: #ffffff;
     padding-top: 50px;
-    padding-left: 40px;
+    padding-left: 20px;
     padding-bottom: 35px;
+    padding-right: 20px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -245,6 +246,11 @@ div>h3 {
     cursor: pointer;
 }
 
+.colors button:hover {
+    background-color: #e9ecef;
+    border: 3px solid #007bff; /* Agrega un borde azul cuando se pasa el mouse por encima */
+}
+
 .sizes ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -264,6 +270,10 @@ div>h3 {
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.sizes ul li:hover {
+    background-color: #e9ecef;
 }
 
 /*guia tallas*/
