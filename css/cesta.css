@@ -130,18 +130,24 @@
 /*--bodycesta--*/
 .bodycesta {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-right: 30%;
     padding-left: 30%;
-    background-color: red;
+    background-color: aqua;
 }
 
 .elementscesta {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+    padding: 20%;
+    background-color: orange;
 }
 
-
+.pago {
+    flex-direction: column;
+    padding: 20%;
+    background-color: grey;
+}
 
 
 /*----------------------------------FOOTER-----------------------------*/
