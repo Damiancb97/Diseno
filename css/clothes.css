@@ -418,7 +418,7 @@
 }
 
 /* 🎯 Adaptaciones para pantallas pequeñas */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .nav {
         padding: 15px;
     }
@@ -430,6 +430,9 @@
     /* Muestra el botón hamburguesa */
     .menu-toggle {
         display: block;
+        cursor: pointer;
+        position: relative;
+        transform: translateX(-350%);
     }
 
     /* Oculta el menú por defecto en pantallas pequeñas */
@@ -451,6 +454,68 @@
         padding: 15px;
         border-bottom: 1px solid #ddd;
     }
+
+    #buscar {
+        display: none;
+    }
+
+    /* Ajuste de los iconos */
+    .barra-iconos {
+        gap: 5px;
+    }
+
+    .filter {
+        padding: 10px;
+        /* justify-content: space-evenly; */
+    }
+}
+
+/* Clase para activar el menú al hacer clic */
+.menuprincipal.active {
+    display: flex;
+}
+
+/*Para moviles*/
+@media (max-width: 480px) {
+    .nav {
+        padding: 15px;
+        /* justify-content: space-between; */
+        align-items: center;
+        position: relative;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    /* Muestra el botón hamburguesa */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        transform: translateX(-350%);
+    }
+
+    /* Oculta el menú por defecto en pantallas pequeñas */
+    .menuprincipal {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .menuprincipal a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
 
     /* Ajuste de los iconos */
     .barra-iconos {

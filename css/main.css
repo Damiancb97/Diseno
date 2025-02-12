@@ -5,13 +5,13 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/*-------------------------------------HEADER-----------------------------*/
+/*---------------------------------HEADER-----------------------------*/
 .nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-right: 95px;
+    padding-right: 100px;
     padding-left: 95px;
 }
 
@@ -24,7 +24,8 @@
 
 /*--barra de busqueda--*/
 .menuprincipal {
-    margin-right: 80px;
+    display: flex;
+    gap: 15px;
 }
 
 .menuprincipal a {
@@ -45,6 +46,11 @@
 }
 
 /*--buscar + iconos--*/
+.barra-iconos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 #buscar {
     text-align: center;
@@ -64,7 +70,6 @@
 }
 
 /*--imagen header--*/
-
 .imagen_cabecera_con_texto {
     position: relative;
     width: 100%;
@@ -174,17 +179,22 @@
 
 
 
-/*----------------------------------------------FOOTER-----------------------------*/
-.footer {
+/*----------------------------------FOOTER-----------------------------*/
+
+.infofooter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border-top: 1px solid black;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
 }
 
-/*-----------------------------asistencia e information--------------------*/
+.infofooter p a {
+    color: grey;
+}
+
+/*asistencia e information*/
 
 .asistencia,
 .information {
@@ -194,7 +204,7 @@
 }
 
 /*aplicar bold al primer hijo de div*/
-.footer div p:first-child {
+.infofooter div p:first-child {
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -210,7 +220,8 @@
     text-decoration: underline;
 }
 
-/*--------------------------------redes------------------------*/
+/*redes*/
+
 .facebook,
 .instagram,
 .twitter,
@@ -219,7 +230,7 @@
     color: black;
 }
 
-/*--------------------------------idioma------------------------*/
+/*idioma*/
 .language {
     position: relative;
     display: block;
@@ -270,4 +281,141 @@
 /*Muestra idiomas al pasar el mouse*/
 .language:hover .language-dropdown {
     display: block;
+}
+
+.footercopy {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--Copyright--*/
+.copyright {
+    font-size: 15px;
+}
+
+.copyright img {
+    height: 22px;
+    vertical-align: middle;
+    margin-left: 0.1rem;
+}
+
+
+
+/* 🔥 MENÚ RESPONSIVE 🔥 */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: black;
+}
+
+/* Para tablets, etc */
+@media (max-width: 900px) {
+    .nav {
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    /* Muestra el botón hamburguesa */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        transform: translateX(-350%);
+    }
+
+    /* Oculta el menú por defecto en pantallas pequeñas */
+    .menuprincipal {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .menuprincipal a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #buscar {
+        display: none;
+    }
+
+    /* Ajuste de los iconos */
+    .barra-iconos {
+        gap: 5px;
+    }
+
+    .filter {
+        padding: 10px;
+        /* justify-content: space-evenly; */
+    }
+}
+
+/* Clase para activar el menú al hacer clic */
+.menuprincipal.active {
+    display: flex;
+}
+
+/*Para moviles*/
+@media (max-width: 480px) {
+    .nav {
+        padding: 15px;
+        /* justify-content: space-between; */
+        align-items: center;
+        position: relative;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    /* Muestra el botón hamburguesa */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        transform: translateX(-350%);
+    }
+
+    /* Oculta el menú por defecto en pantallas pequeñas */
+    .menuprincipal {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .menuprincipal a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    /* Ajuste de los iconos */
+    .barra-iconos {
+        gap: 5px;
+    }
+}
+
+/* Clase para activar el menú al hacer clic */
+.menuprincipal.active {
+    display: flex;
 }
