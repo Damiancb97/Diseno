@@ -220,6 +220,8 @@
 .images-row {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 
 .image-item {
@@ -464,9 +466,20 @@
         gap: 5px;
     }
 
+    /*body*/
     .filter {
         padding: 10px;
         /* justify-content: space-evenly; */
+    }
+
+    .filter h3 {
+        padding-left: 25px
+    }
+
+    .image-item {
+        flex: 1 1 calc(50% - 10px);
+        /* 2 columnas */
+        max-width: calc(50% - 10px);
     }
 }
 
@@ -520,6 +533,13 @@
     /* Ajuste de los iconos */
     .barra-iconos {
         gap: 5px;
+    }
+
+    /*body*/
+    .image-item {
+        flex: 1 1 100%;
+        /* 1 columna */
+        max-width: 100%;
     }
 }
 
