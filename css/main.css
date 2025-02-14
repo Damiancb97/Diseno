@@ -365,6 +365,7 @@
 /* Clase para activar el menú al hacer clic */
 .menuprincipal.active {
     display: flex;
+    z-index: 100;
 }
 
 /*Para moviles*/

@@ -218,18 +218,19 @@
 }
 
 .images-row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
+    gap: 10px; /* Espaciado entre elementos */
+    justify-items: center; /* Centra los elementos dentro de cada celda */
 }
+
 
 .image-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     /* text-align: center; */
-    width: calc(25% - 10px);
+    /* width: calc(25% - 10px); */
     /* Mantiene las dimensiones originales */
 }
 
@@ -476,16 +477,15 @@
         padding-left: 25px
     }
 
-    .image-item {
-        flex: 1 1 calc(50% - 10px);
-        /* 2 columnas */
-        max-width: calc(50% - 10px);
+    .images-row {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* Clase para activar el menú al hacer clic */
 .menuprincipal.active {
     display: flex;
+    z-index: 100;
 }
 
 /*Para moviles*/
@@ -536,10 +536,8 @@
     }
 
     /*body*/
-    .image-item {
-        flex: 1 1 100%;
-        /* 1 columna */
-        max-width: 100%;
+    .images-row {
+        grid-template-columns: 1fr;
     }
 }
 
