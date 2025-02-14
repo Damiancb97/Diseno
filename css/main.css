@@ -148,9 +148,10 @@
 }
 
 .images-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
+    gap: 10px; /* Espaciado entre elementos */
+    justify-items: center; /* Centra los elementos dentro de cada celda */
 }
 
 .image-item {
@@ -158,7 +159,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: calc(25% - 10px);
+    /* width: calc(25% - 10px); */
     /* Mantiene las dimensiones originales */
 }
 
@@ -360,6 +361,26 @@
         padding: 10px;
         /* justify-content: space-evenly; */
     }
+    .images-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inferiorSection{
+        display: flex;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    /*footer*/
+    .infofooter{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .asistencia, .information, .redes {
+        margin: 20px;
+    }
 }
 
 /* Clase para activar el menú al hacer clic */
@@ -413,6 +434,11 @@
     /* Ajuste de los iconos */
     .barra-iconos {
         gap: 5px;
+    }
+
+    /*body*/
+    .images-row {
+        grid-template-columns: 1fr;
     }
 }
 
