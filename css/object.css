@@ -248,7 +248,8 @@ div>h3 {
 
 .colors button:hover {
     background-color: #e9ecef;
-    border: 3px solid #007bff; /* Agrega un borde azul cuando se pasa el mouse por encima */
+    border: 3px solid #007bff;
+    /* Agrega un borde azul cuando se pasa el mouse por encima */
 }
 
 .sizes ul {
@@ -297,6 +298,7 @@ div>h3 {
     color: white;
     background-color: #007BFF;
     border-color: inherit;
+    cursor: pointer;
 }
 
 #add-favorite {
@@ -310,6 +312,7 @@ div>h3 {
     border-radius: 70%;
     /* Hace que el botón sea un círculo */
     border-color: grey;
+    cursor: pointer;
 }
 
 /*----------------------------FOOTER-----------------------------*/
