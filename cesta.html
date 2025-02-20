@@ -18,6 +18,12 @@
         <div class="logo">
             <a href="main.html"><img src="img/logopagina.png" alt="Logotipo" class="imagen-esquina-izquierda"></a>
         </div>
+
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
         <!--Barra de navegación-->
         <div class="menuprincipal">
             <a href="main.html">Inicio</a>
@@ -27,13 +33,14 @@
             <a href="watches.html">Relojes</a>
             <a href="#">Accesorios</a>
         </div>
+
         <!--Buscador + iconos-->
         <div class="barra-iconos">
-            <input type="text" placeholder="Buscar" id="buscar">
+            <input type="text" placeholder="Buscar" id="buscar" class="activo">
             <a href="#" class="favorito">
                 <i class="fa-solid fa-heart"></i>
             </a>
-            <a href="cesta.html" class="cesta">
+            <a href="cesta.html" class="cesta activo">
                 <i class="fa-solid fa-bag-shopping"></i>
             </a>
             <a href="login.html" class="user">
@@ -44,33 +51,52 @@
 
     <!--BODY-->
 
-    <div class="bodycontainer">
-        <div class="openbody">
-            <!--filtros-->
-            <div class="filter">
-                <h3>VACÍO</h3>
-            </div>
-            <div class="bodycesta">
-                <div class="elementscesta">
-                    <h3>CESTA</h3>
-                    <div class="element1">
-                        <img src="img/logopagina.png" alt="Logotipo" class="imagen-esquina-izquierda">
-                        <h3>hola</h3>
-                    </div>
-                    <div class="element2">
-                        <h3>hola</h3>
-                    </div>
+    <div class="cart-container">
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="img/AF1black.png" alt="Nike Dunk Low Retro" class="cart-item-image">
+                <div class="cart-item-details">
+                    <p class="cart-item-title">Nike Dunk Low Retro SE Leather/Suede</p>
+                    <p class="cart-item-subtitle">Zapatillas - Hombre</p>
+                    <p class="cart-item-color">Blanco/Negro</p>
+                    <label for="quantity1">Cantidad:</label>
+                    <select id="quantity1" class="cart-item-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <button class="cart-item-remove">Eliminar</button>
                 </div>
-                <div class="pago">
-                    <h3>RESUMEN</h3>
-                </div>
+                <p class="cart-item-price">120€</p>
             </div>
-            <br><br>
+            <div class="cart-item">
+                <img src="img/AF1black.png" alt="Nike Dunk Low Retro" class="cart-item-image">
+                <div class="cart-item-details">
+                    <p class="cart-item-title">Nike Dunk Low Retro SE Leather/Suede</p>
+                    <p class="cart-item-subtitle">Zapatillas - Hombre</p>
+                    <p class="cart-item-color">Blanco/Negro</p>
+                    <label for="quantity2">Cantidad:</label>
+                    <select id="quantity2" class="cart-item-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <button class="cart-item-remove">Eliminar</button>
+                </div>
+                <p class="cart-item-price">120€</p>
+            </div>
         </div>
-    </div>
+        <div class="cart-summary">
+            <p class="summary-label">Subtotal: <span class="summary-value">120,00€</span></p>
+            <p class="summary-label">Gastos de envío y gestión: <span class="summary-value">00€</span></p>
+            <p class="summary-total">Total: <span class="summary-value">120,00€</span></p>
+            <button class="payment-button credit-card">Tarjeta Crédito/Débito</button>
+            <button class="payment-button paypal">PayPal</button>
+        </div>
     </div>
 
     <!--FOOTER-->
+
     <div class="footer">
         <div class="infofooter">
             <div class="asistencia">
@@ -131,8 +157,7 @@
                 </div> -->
         </div>
     </div>
-    <script src="/js/Filters.js"></script>
-    <script src="/js/OrderBy.js"></script>
+    <script src="/js/MenuToggle.js"></script>
 </body>
 
 </html>

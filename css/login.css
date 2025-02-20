@@ -5,15 +5,14 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/*-------------------------------------HEADER-----------------------------*/
+/*---------------------------------HEADER-----------------------------*/
 .nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-right: 95px;
+    padding-right: 100px;
     padding-left: 95px;
-    border-bottom: 1px solid #ccc;
 }
 
 /*--logotipo--*/
@@ -25,7 +24,8 @@
 
 /*--barra de busqueda--*/
 .menuprincipal {
-    margin-right: 80px;
+    display: flex;
+    gap: 15px;
 }
 
 .menuprincipal a {
@@ -46,6 +46,11 @@
 }
 
 /*--buscar + iconos--*/
+.barra-iconos {
+    display: flex;
+    align-items: center;
+    /* gap: 5px; */
+}
 
 #buscar {
     text-align: center;
@@ -53,6 +58,44 @@
     border: 1px solid #000000;
     padding: 10px;
     margin-right: 10px;
+}
+
+.barra-iconos a {
+    font-size: 1.5rem;
+    color: #333;
+    /* Color base del icono */
+    text-decoration: none;
+    padding: 5px;
+    /* Espaciado interno */
+    border-radius: 50%;
+    /* Hace que el borde sea redondo */
+    border: 2px solid transparent;
+    /* Inicialmente sin borde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    /* Espacio uniforme para los iconos */
+    height: 45px;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.barra-iconos a.activo {
+    transform: scale(1.1);
+    /* Aumenta un poco el tamaño */
+    color: rgb(122, 27, 27);
+    /* Azul */
+    border: 2px solid rgb(122, 27, 27);
+    /* Borde azul al hacer hover */
+}
+
+.barra-iconos a:hover {
+    transform: scale(1.1);
+    /* Aumenta un poco el tamaño */
+    color: rgb(122, 27, 27);
+    /* Azul */
+    border: 2px solid rgb(122, 27, 27);
+    /* Borde azul al hacer hover */
 }
 
 .favorito,
@@ -193,17 +236,22 @@ button {
     cursor: pointer;
 }
 
-/*----------------------------------------------FOOTER-----------------------------*/
-.footer {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+/*----------------------------------FOOTER-----------------------------*/
+
+.infofooter {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     border-top: 1px solid #ccc;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
 }
 
-/*-----------------------------asistencia e information--------------------*/
+.infofooter p a {
+    color: grey;
+}
+
+/*asistencia e information*/
 
 .asistencia,
 .information {
@@ -213,7 +261,7 @@ button {
 }
 
 /*aplicar bold al primer hijo de div*/
-.footer div p:first-child {
+.infofooter div p:first-child {
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -229,7 +277,8 @@ button {
     text-decoration: underline;
 }
 
-/*--------------------------------redes------------------------*/
+/*redes*/
+
 .facebook,
 .instagram,
 .twitter,
@@ -238,7 +287,7 @@ button {
     color: black;
 }
 
-/*--------------------------------idioma------------------------*/
+/*idioma*/
 .language {
     position: relative;
     display: block;
@@ -289,4 +338,160 @@ button {
 /*Muestra idiomas al pasar el mouse*/
 .language:hover .language-dropdown {
     display: block;
+}
+
+.footercopy {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--Copyright--*/
+.copyright {
+    font-size: 15px;
+}
+
+.copyright img {
+    height: 22px;
+    vertical-align: middle;
+    margin-left: 0.1rem;
+}
+
+
+/*  MENÚ RESPONSIVE  */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: black;
+}
+
+/*  Adaptaciones para pantallas pequeñas */
+@media (max-width: 900px) {
+    .nav {
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    /* Muestra el botón hamburguesa */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        transform: translateX(-190%);
+    }
+
+    /* Oculta el menú por defecto en pantallas pequeñas */
+    .menuprincipal {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .menuprincipal a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #buscar {
+        display: none;
+    }
+
+    /* Ajuste de los iconos */
+    .barra-iconos {
+        gap: 5px;
+    }
+
+    /*body*/
+
+    .cart-container {
+        grid-template-columns: 1fr;
+        padding: 5px
+    }
+
+    /*footer*/
+    .infofooter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .asistencia,
+    .information,
+    .redes {
+        margin: 20px;
+    }
+
+
+}
+
+/* Clase para activar el menú al hacer clic */
+.menuprincipal.active {
+    display: flex;
+    z-index: 100;
+}
+
+/*Para moviles*/
+@media (max-width: 500px) {
+
+    .nav {
+        padding: 0px;
+        /* justify-content: space-between; */
+        align-items: center;
+        position: relative;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    /* Muestra el botón hamburguesa */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        transform: translateX(-350%);
+    }
+
+    /* Oculta el menú por defecto en pantallas pequeñas */
+    .menuprincipal {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .menuprincipal a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    /* Ajuste de los iconos */
+    .barra-iconos {
+        gap: 5px;
+    }
+
+    /*body*/
+    .cart-container {
+        grid-template-columns: 1fr;
+        padding: 5px
+    }
 }

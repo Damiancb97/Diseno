@@ -18,6 +18,12 @@
         <div class="logo">
             <a href="main.html"><img src="img/logopagina.png" alt="Logotipo" class="imagen-esquina-izquierda"></a>
         </div>
+
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
         <!--Barra de navegación-->
         <div class="menuprincipal">
             <a href="main.html">Inicio</a>
@@ -30,14 +36,14 @@
 
         <!--Buscador + iconos-->
         <div class="barra-iconos">
-            <input class="navbuscar" type="text" placeholder="Buscar" id="buscar">
+            <input type="text" placeholder="Buscar" id="buscar">
             <a href="#" class="favorito">
                 <i class="fa-solid fa-heart"></i>
             </a>
-            <a href="#" class="cesta">
+            <a href="cesta.html" class="cesta">
                 <i class="fa-solid fa-bag-shopping"></i>
             </a>
-            <a href="#" class="user">
+            <a href="login.html" class="user activo">
                 <i class="fa-solid fa-user"></i>
             </a>
         </div>
@@ -89,39 +95,66 @@
 
     <!--FOOTER-->
     <div class="footer">
-        <div class="asistencia">
-            <p>Asistencia</p>
-            <p><a href="#">Ayuda</a></p>
-            <p><a href="#">Entregas</a></p>
-            <p><a href="#">Devoluciones y reembolsos</a></p>
-            <p><a href="#">Seguimiento de pedidos</a></p>
-        </div>
-        <div class="information">
-            <p>Informacion legal</p>
-            <p><a href="#">Términos y Condiciones</a></p>
-            <p><a href="#">Política de privacidad</a></p>
-            <p><a href="#">Política de cookies</a></p>
-            <p><a href="#">Preferencia de cookies</a></p>
-        </div>
+        <div class="infofooter">
+            <div class="asistencia">
+                <p>Asistencia</p>
+                <p><a href="#">Ayuda</a></p>
+                <p><a href="#">Entregas</a></p>
+                <p><a href="#">Devoluciones y reembolsos</a></p>
+                <p><a href="#">Seguimiento de pedidos</a></p>
+            </div>
+            <div class="information">
+                <p>Informacion legal</p>
+                <p><a href="#">Términos y Condiciones</a></p>
+                <p><a href="#">Política de privacidad</a></p>
+                <p><a href="#">Política de cookies</a></p>
+                <p><a href="#">Preferencia de cookies</a></p>
+            </div>
 
-        <div class="redes">
-            <p>Siguenos:</p>
-            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" class="instagram"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="#" class="twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
-            <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
+            <div class="redes">
+                <p>Siguenos:</p>
+                <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" class="twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
 
-        <div class="language">
-            <a href="#" class="language-selector"><i class="fa-solid fa-globe"></i>Idioma</a>
-            <ul class="language-dropdown">
-                <li><a href="#">Español</a></li>
-                <li><a href="#">Inglés</a></li>
-                <li><a href="#">Francés</a></li>
-                <li><a href="#">Chino</a></li>
-            </ul>
+            <!-- <div class="language">
+                    <a href="#" class="language-selector"><i class="fa-solid fa-globe"></i>Idioma</a>
+                    <ul class="language-dropdown">
+                        <li><a href="#">Español</a></li>
+                        <li><a href="#">Inglés</a></li>
+                        <li><a href="#">Francés</a></li>
+                        <li><a href="#">Chino</a></li>
+                    </ul>
+                </div> -->
+        </div>
+        <div class="footercopy">
+            <div class="copyright">
+                <p xmlns:cc="http://creativecommons.org/ns#">Esta obra está licenciada bajo <a
+                        href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
+                        rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0 <img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;">
+                        <a href="https: //mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+                                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+                                alt=""><img
+                                src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+                        </a></p>
+            </div>
+            <!-- <div class="language">
+                    <a href="#" class="language-selector"><i class="fa-solid fa-globe"></i>Idioma</a>
+                    <ul class="language-dropdown">
+                        <li><a href="#">Español</a></li>
+                        <li><a href="#">Inglés</a></li>
+                        <li><a href="#">Francés</a></li>
+                        <li><a href="#">Chino</a></li>
+                    </ul>
+                </div> -->
         </div>
     </div>
+    <script src="/js/MenuToggle.js"></script>
     <script src="js/formulario.js"></script>
 </body>
 

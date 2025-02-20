@@ -542,8 +542,6 @@
     .redes {
         margin: 20px;
     }
-
-
 }
 
 /* Clase para activar el menú al hacer clic */
@@ -553,9 +551,9 @@
 }
 
 /*Para moviles*/
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .nav {
-        padding: 15px;
+        padding: 0px;
         /* justify-content: space-between; */
         align-items: center;
         position: relative;

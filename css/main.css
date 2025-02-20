@@ -49,7 +49,7 @@
 .barra-iconos {
     display: flex;
     align-items: center;
-    gap: 10px;
+    /* gap: 5px; */
 }
 
 #buscar {
@@ -58,6 +58,35 @@
     border: 1px solid #000000;
     padding: 10px;
     margin-right: 10px;
+}
+
+.barra-iconos a {
+    font-size: 1.5rem;
+    color: #333;
+    /* Color base del icono */
+    text-decoration: none;
+    padding: 5px;
+    /* Espaciado interno */
+    border-radius: 50%;
+    /* Hace que el borde sea redondo */
+    border: 2px solid transparent;
+    /* Inicialmente sin borde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    /* Espacio uniforme para los iconos */
+    height: 45px;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.barra-iconos a:hover {
+    transform: scale(1.1);
+    /* Aumenta un poco el tamaño */
+    color: rgb(122, 27, 27);
+    /* Azul */
+    border: 2px solid rgb(122, 27, 27);
+    /* Borde azul al hacer hover */
 }
 
 .favorito,
@@ -149,9 +178,12 @@
 
 .images-row {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
-    gap: 10px; /* Espaciado entre elementos */
-    justify-items: center; /* Centra los elementos dentro de cada celda */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas en pantallas grandes */
+    gap: 10px;
+    /* Espaciado entre elementos */
+    justify-items: center;
+    /* Centra los elementos dentro de cada celda */
 }
 
 .image-item {
@@ -178,6 +210,19 @@
     margin: 0;
 }
 
+.image-item:hover img {
+    /* transform: scale(1.1); */
+}
+
+.image-item:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-item p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
 
 
 /*----------------------------------FOOTER-----------------------------*/
@@ -361,24 +406,27 @@
         padding: 10px;
         /* justify-content: space-evenly; */
     }
+
     .images-row {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .inferiorSection{
+    .inferiorSection {
         display: flex;
         padding-right: 0px;
         padding-left: 0px;
     }
 
     /*footer*/
-    .infofooter{
+    .infofooter {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 
-    .asistencia, .information, .redes {
+    .asistencia,
+    .information,
+    .redes {
         margin: 20px;
     }
 }
@@ -390,9 +438,9 @@
 }
 
 /*Para moviles*/
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .nav {
-        padding: 15px;
+        padding: 0px;
         /* justify-content: space-between; */
         align-items: center;
         position: relative;
@@ -421,7 +469,7 @@
         background-color: white;
         text-align: center;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 10px 0;
+        padding: 0px 0;
     }
 
     .menuprincipal a {
